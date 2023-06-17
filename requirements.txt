@@ -1,0 +1,6 @@
+django 
+openai
+flask
+djangorestframework
+drf-yasg
+re
