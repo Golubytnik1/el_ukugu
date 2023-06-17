@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     'chat',
     'nalog',
     'ugolovka',
+    'drf_yasg',
 ]
 
 MIDDLEWARE = [
