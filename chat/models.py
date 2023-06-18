@@ -1,7 +1,7 @@
 import openai
 from flask import Flask, request, jsonify
 
-openai.api_key = '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'
+openai.api_key = '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'
 app = Flask(__name__)
 
 
@@ -35,7 +35,7 @@ def generate_response(question):
     response = openai.Completion.create(
         engine='text-davinci-003',
         prompt=question,
-        max_tokens=3000,
+        max_tokens=1000,
         n=1,
         stop=None,
     )

@@ -1,5 +1,6 @@
 from pathlib import Path
 import os
+# from corsheaders.middleware import CorsMiddleware
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -14,7 +15,7 @@ SECRET_KEY = 'django-insecure-9^u$fh-ni$sn34*$mhwin$=llg&r-n*o9@*7wo=6#=@8g!_pb=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -31,6 +32,7 @@ INSTALLED_APPS = [
     'nalog',
     'ugolovka',
     'drf_yasg',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
